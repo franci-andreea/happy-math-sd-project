@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components
+{
+    .sidebar-icon 
+    {
+        @apply relative flex items-center justify-center
+               h-12 w-12 mt-2 mb-2 mx-auto shadow-lg
+               bg-burgundy text-magnolia
+               hover:bg-persiangreen hover:text-magnolia
+               rounded-3xl hover:rounded-xl
+               transition-all duration-300 ease-linear
+               cursor-pointer;
+    }
+
+    .sidebar-tooltip
+    {
+        @apply absolute w-auto p-2 m-2 min-w-max left-14
+               rounded-md shadow-md
+               text-white bg-gray-900
+               text-xs font-bold
+               transition-all duration-100 scale-0 origin-left;
+    }
+
+    .simple-button
+    {
+        @apply bg-burgundy rounded-xl text-magnolia
+                h-7 w-6/12
+                hover:bg-magnolia hover:text-burgundy
+                hover:border-burgundy hover:border-2
+    }
+
+    .new-button
+    {
+        @apply bg-burgundy rounded-xl h-7 w-36 
+               text-magnolia border-2 border-burgundy
+               hover:bg-magnolia hover:text-burgundy
+               hover:border-burgundy hover:border-2
+    }
+
+    .category-bubble
+    {
+        @apply  bg-persiangreen rounded-xl
+               w-24 text-center
+    }
+
+    .yellow-button
+    {
+        @apply bg-persiangreen rounded-xl h-7 w-36 
+               text-lemonyellow border-2 border-persiangreen
+               hover:bg-lemonyellow hover:text-burgundy
+               hover:border-burgundy hover:border-2
+    }
+
+    .lava-button
+    {
+        @apply bg-lava rounded-xl h-7 w-36 
+               text-lemonyellow border-2 border-lava
+               hover:bg-magnolia hover:text-lava
+               hover:border-lava hover:border-2
+    }
+
+    .mr-100
+    {
+        margin-right: 54rem/* 384px */;
+    }
+}
